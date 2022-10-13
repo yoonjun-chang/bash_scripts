@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+echo "What is your name?"
+read NAME
+if [ $NAME = "George" ]
+then
+  echo "That's my name, too."
+else
+  echo "Hello" $NAME "I'm George."
+fi
+exit 0
