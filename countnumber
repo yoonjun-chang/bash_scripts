@@ -1,0 +1,20 @@
+#!/bin/bash
+declare -i num
+echo "I'm thinking of a number between 1 and 100."
+# Give num a value to prevent errors.
+num=0
+while test $num -ne 23
+do
+  echo "What is your guess?"
+  read num
+  if test $num -lt 23
+  then
+    echo "The number is higher."
+  fi
+  if test $num -gt 23
+  then
+    echo "The number is lower."
+  fi
+done
+echo "You guessed it."
+exit 0
