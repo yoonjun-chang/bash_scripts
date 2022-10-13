@@ -1,0 +1,3 @@
+ifconfig | grep broadcast | awk '{print $2}'
+#only displaying ip address
+$echo(ifconfig | grep broadcast | awk '{print $2}'
